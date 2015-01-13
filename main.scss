@@ -1,0 +1,507 @@
+/*Colors*/
+$dark-blue: #0B3551;
+$green-blue: #196FB1;
+$shuttle-gray: #5E686F;
+$cadet-blue: #A3B3BE;
+
+$primary-color: $dark-blue;
+$primary-accent: $green-blue;
+$secondary-color: $shuttle-gray;
+$secondary-accent: $cadet-blue;
+
+
+/* Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+a:link {
+  color: $secondary-accent;
+}
+a:visited {
+  color: $secondary-accent;
+}
+a:hover {
+  color: $primary-accent}
+
+p {
+  font-family: "Oswald", Sans-Serif;
+  font-size: 16px;
+  text-align: left;
+  line-height: 27px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+h1 {
+  font-family: "Oswald", Sans-Serif;
+  font-size: 48px;
+  text-align: left;
+  margin-bottom: 0px;
+  color: $primary-color;
+  line-height: 70px
+}
+h2 {
+  font-family: "Open Sans", Sans-Serif;
+  border-left: 1px solid $secondary-accent;
+  height: 60px;
+  font-size: 35px;
+  padding-left: 10px;
+  color: $primary-accent;
+  margin-top: 20px;
+  margin-left: 7px;
+  margin-bottom: -8px;
+}
+p, h5 {
+  color: $secondary-color;
+}
+h5 {
+  font-family: "Oswald", Sans-Serif;
+  display: inline-block;
+  padding-left: 10px;
+}
+h4 {
+  text-align: left;
+  font-family: "Open Sans", Sans-Serif;
+  font-size: 18px;
+  color: $primary-accent;
+  margin-top: 44px;
+}
+
+
+
+/* Layouts */
+
+body {
+  background-color: $secondary-accent;
+  width: 1300px;
+  margin: auto;
+  position: relative;
+  color: $secondary-accent;
+}
+.container {
+  background-color: white;
+  position: relative;
+  margin: auto;
+  overflow: auto;
+  position: relative;
+}
+.headpic {
+  background: url('http://standupjournal.standupjournal.netdna-cdn.com/wp-content/uploads/2013/10/whale-next-to-sup-.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 524px;
+  position: relative;
+}
+.main {
+  font-family: "Oswald", Sans-Serif;
+  background-color: white;
+  margin-right: 193px;
+  margin-left: 163px;
+  margin: auto:
+  position: relative;
+}
+.bottomheader {
+  font-family: "Oswald", Sans-Serif;
+  font-size: 50px;
+  height: 50px;
+  text-align: center;
+  margin-top: 33px;
+  margin-bottom: 88px;
+  vertical-align: middle;
+  position: relative;
+  padding: 0px;
+  color: $primary-color;
+}
+footer {
+  height: 98px;
+  background-color: $primary-color;
+  position: relative;
+}
+
+
+/* Components */
+
+.blue:before {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  background: RGBA(25, 111, 176, 0.5);
+  transition: all .3s linear;
+  color: white;
+}
+  &:hover:before {
+    background: none;
+  }
+    &:hover .phototext {
+      color: white;
+    }
+.blueround:before {
+  content: '';
+  position: absolute;
+  border-radius: 100%;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  background: RGBA(25, 111, 176, 0.5);
+  transition: all .3s linear;
+}
+  &:hover:before {
+    background: none;
+    color: white;
+  }
+ul {
+  li {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+  }
+  .linkbox{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.linkb1 {
+  display: inline-block;
+  position: relative;
+}
+  &:hover .linkboxinner {
+    background-color: $primary-color;
+  }
+  &:hover .linkbox {
+    background-color: $primary-accent;
+  }
+.linkb2 {
+  display: inline-block;
+  position: relative;
+}
+  &:hover .linkboxinner {
+    background-color: $primary-color;
+  }
+  &:hover .linkbox {
+    background-color: $primary-accent;
+  }
+.linkb3 {
+  display: inline-block;
+  position: relative;
+  link: href="http:/ironyard.com/"
+}
+  &:hover .linkboxinner {
+    background-color: $primary-color;
+  }
+  &:hover .linkbox {
+    background-color: $primary-accent;
+  }
+.topright {
+  font-family: "Oswald", Sans-Serif;
+  position: absolute;
+  font-size:16px;
+  top: 22px;
+  right: 190px;
+  text-align: left;
+  display: inline-block;
+  clear: both;
+  margin: 0px;
+  color: $primary-color;
+  text-decoration: none
+}
+a{
+  color: $primary-color;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.top {
+  top: 8px;
+  left: 141px;
+  background-color: white;
+  width: 1000px;
+  display: inline-block;
+  position: relative;
+}
+.logo {
+  top: 8px;
+  left: 136px;
+  width: 500px;
+  text-align: left;
+  position: absolute;
+  color: $primary-color;
+  vertical-align: middle;
+  padding: auto;
+  display:inline-block;
+}
+.logo2 {
+  top: 20px;
+  right: 163px;
+  width: 500px;
+  text-align: right;
+  position: absolute;
+  color: $primary-color;
+  vertical-align: middle;
+  padding: auto;
+  display:inline-block;
+}
+.topleft {
+  font-family: "Oswald", Sans-Serif;
+  font-size: 15px;
+  top: 24px;
+  left: 198px;
+  width: 500px;
+  text-align: left;
+  position: absolute;
+  color: $primary-color;
+  vertical-align: middle;
+}
+.headline {
+  font-family: "Oswald", Sans-Serif;
+  font-size: 98px;
+  top:208px;
+  left: 140px;
+  width: 1000px;
+  color: white;
+  text-align: center;
+  position: absolute;
+}
+.headlinesmall {
+  font-family: "Open Sans", Sans-Serif;
+  font-size: 50px;
+  top: 200px;
+  left: 140px;
+  width: 1000px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.smallheadline {
+  font-family: "Oswald", Sans-Serif;
+  font-size: 14px;
+  top: 315px;
+  left: 140px;
+  width: 1000px;
+  color: $primary-color;
+  text-align: center;
+  position: absolute;
+}
+.mainleft {
+  float: left;
+  width: 70%;
+  margin-top: 22px;
+  margin-bottom: 63px;
+  padding-right: 40px;
+  display: inline-block;
+}
+.mainright {
+  float: left;
+  width: 30%;
+  margin-top: 81px;
+  padding-left: 40px;
+  display: inline-block;
+  position: relative;
+}
+.roundphotosmall{
+  background-image: url('https://unsplash.imgix.net/photo-1417722009592-65fa261f5632?q=75&fm=jpg&s=553e7d8a753f4d7b2a4161dcbe9d9801');
+  border-radius: 100%;
+  height: 21px;
+  width: 21px;
+  background-size: cover;
+  margin-top: 5px;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.caption {
+  font-family: "Oswald", Sans-Serif;
+  vertical-align: middle;
+  padding-left: 10px;
+  margin-bottom: 11px;
+  margin-top: 20px;
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+}
+.anne {
+  font-family: "Oswald", Sans-Serif;
+  color: $primary-accent;
+  font-style: bold;
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
+}
+.anneboard{
+  background-image: url('http://h2oaddiction.com/wp-content/uploads/2011/07/Paddle-boarding-072211-2.jpg');
+  height: 300px;
+  width: 277px;
+  background-size: cover;
+  margin-bottom: 7px;
+  text-align: center;
+  position: relative;
+}
+.roundphoto{
+  background-image: url('https://unsplash.imgix.net/photo-1417722009592-65fa261f5632?q=75&fm=jpg&s=553e7d8a753f4d7b2a4161dcbe9d9801');
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+  background-size: cover;
+  margin-left: 98px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+.divider {
+  weight: 1300px;
+  border-top: 1px solid $secondary-accent;
+  clear: both;
+}
+.linkboxes {
+  height: 30px;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+}
+.linkboxinner {
+  display: inline-block;
+  width: 33px;
+  height: 30px;
+  background-color: $secondary-color;
+  position: relative;
+  float: left;
+  vertical-align: middle;
+  padding-top: 2px;
+  margin-left: 4px;
+}
+.linkbox {
+  display: inline-block;
+  background-color: #a3b3be;
+  height: 30px;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  vertical-align: middle;
+  float: left;
+  padding: 5px 5px 5px 10px;
+  color: white;
+  margin-right: 4px;
+}
+.social {
+  font-family: "Oswald", Sans-Serif;
+  text-align: center;
+  font-size: 13px;
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+  margin-top: -20px;
+  margin-bottom: 33px;
+}
+.social ul {
+  margin: 20px 0px;
+}
+.roundphotoabout {
+  text-align:right;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  display: inline-block;
+  padding: 0px;
+}
+.photoabout {
+  text-align: right;
+  text-decoration: none;
+}
+.boxphotos {
+  margin-left: -40px;
+  margin-top: -40px;
+  height: 330px;
+}
+.photo1 {
+  display: inline-block;
+  background-image: url('http://www.toxel.com/wp-content/uploads/2009/12/sharkweek02.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 325px;
+  height: 330px;
+  position: relative;
+}
+.photo2 {
+  display: inline-block;
+  background-image: url('http://wdet.org/media/_versions_/cfs_images/crop_michigan_beer_fb_big.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 325px;
+  height: 330px;
+  position: relative;
+}
+.photo3 {
+  display: inline-block;
+  background-image: url('https://img1.etsystatic.com/032/0/5695102/il_340x270.608200135_29t6.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 325px;
+  height: 330px;
+  position: relative;
+}
+.photo4 {
+  display: inline-block;
+  background-image: url('http://cdn.stupiddope.com/wp-content/uploads/2014/10/Captain-Morgan-Original-Spiced-Rum.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 325px;
+  height: 330px;
+  position: relative;
+}
+.phototext {
+  font-family: "Open Sans", Sans-Serif;
+  font-size: 40px;
+  bottom: 12px;
+  left: 20px;
+  width: 325px;
+  color: $primary-color;
+  text-align: left;
+  position: absolute;
+  line-height: 40px;
+}
+.footerleft1 {
+  position: absolute;
+  top: 13px;
+  left: 153px;
+  margin: auto;
+}
+.footerleft2 {
+  font-family: "Oswald", Sans-Serif;
+  background-image: src="images/theironyard.png";
+  position: absolute;
+  top: 39px;
+  left: 223px;
+  color: $secondary-accent;
+  display: inline-block;
+  margin: aut;
+}
+.footerright {
+  font-family: "Oswald", Sans-Serif;
+  position: absolute;
+  font-size:15px;
+  top: 39px;
+  right: 163px;
+  display: inline-block;
+  clear: both;
+  margin: auto;
+  text-decoration: none;
+}
+.anneh4 {
+  text-align: center;
+  font-family: "Open Sans", Sans-Serif;
+  font-size: 18px;
+  color: $primary-color;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.sidebartext {
+  text-align: left;
+  font-family: "Open Sans", Sans-Serif;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: -20px;
+}
